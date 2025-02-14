@@ -1,0 +1,1 @@
+First I designed its interface, then I made it structured using HTML, then I styled it well using Talwindows and made the page responsive, then I added functionality to it using internal JavaScript, after doing all this I applied the SOE engine with the help of JavaScript and then integrated it
