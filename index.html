@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Explore top countries and apply now to start your medical journey.">
+    <title>Study MBBS Abroad</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); 
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-emerald-700 text-white text-center py-10">
+        <h1 class="text-3xl font-bold">Study MBBS Abroad</h1>
+        <p class="text-lg pb-5">Apply Now for Your Medical Journey</p>
+       <a href="#leadForm" class="bg-white  text-emerald-600 mb-4 font-semibold px-6 py-3 rounded shadow-lg hover:bg-gray-200">
+        Get Started
+    </a>
+    </header>
+    
+    <section class="m-auto bg-green-500 p-10 text-white">
+        <h2 class="text-3xl font-bold text-center">Why Study MBBS Abroad?</h2>
+        <p class="text-center text-lg text-gray-200 py-3">Affordable tuition fees, world-class universities, and international recognition.</p>
+    </section>
+    
+    <section class=" bg-emerald-500 mx-auto p-10">
+        <h2 class="text-3xl font-bold text-white text-center">Top Countries</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center mt-4">
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Russia</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Uzbekistan</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Kazakhstan</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Philippines</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Georgia</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Kyrgyzstan</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Egypt</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Germany</span>
+            <span class="bg-gray-500 text-white font-semibold p-3 rounded">Australia</span>
+        </div>
+    </section>
+    
+    <section class="bg-emerald-700 mx-auto p-10">
+        <h2 class="text-3xl py-3 text-white font-semibold text-center">Admission Process & Eligibility</h2>
+        <p class="text-gray-300 text-lg text-center">Step 1: Choose a country & university. <br>Step 2: Submit application & documents. <br>Step 3: Receive admission letter. <br>Step 4: Apply for a visa & travel.</p>
+    </section>
+    
+    <section class="bg-emerald-200 py-5">
+        <h2 class="text-3xl text-orange-900 py-5 font-bold text-center">Apply Now</h2>
+        <form id="leadForm" class="p-10 container mx-auto bg-emerald-500 shadow-md rounded-md">
+            <input type="text" id="name" placeholder="Full Name" class="w-full p-2 border rounded mb-3 placeholder:text-gray-700" required>
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 border rounded mb-3 placeholder:text-gray-700" required>
+            <input type="tel" id="phone" placeholder="Phone Number" class="w-full p-2 border rounded mb-3 placeholder:text-gray-700" required>
+            <select id="country" class="w-full p-2 border rounded mb-3">
+                <option value="">Select Preferred Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+                <option>Germany</option>
+                <option>Australia</option>
+            </select>
+            <button type="submit" class="w-full font-bold text-base bg-emerald-700 text-white p-3 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById("leadForm").addEventListener("submit", function(event) {
+            // event.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let country = document.getElementById("country").value;
+            if (name && email && phone && country) {
+                alert("Thank you for applying! We will contact you soon.");
+            } else {
+                alert("Please fill out all fields.");
+            }
+        });
+    </script>
+</body>
+</html>
